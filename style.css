@@ -1,23 +1,35 @@
 *{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#max{
-  height:100vh;
-  width:100vw;
-}
 
 #name{
+
   padding-left:20px;
-  font-size:26px;
+  padding-right:20px;
+  font-size:15px;
   color:rgb(160, 160, 154);
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
   border-bottom: 2px solid white;
-  height:12%;
+
 }
+#nameunder{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+
+}
+@media (max-width:1000px){
+#all{
+  margin-top:180px;
+}
+h1{
+  font-size: 60px;
+}
+}
+
 #home{
-  height:80px;
+  height:80%;
   margin:20px;
   box-shadow: 3px 3px rgba(5, 58, 21, 0.459);
   font-size: 30px;
@@ -32,13 +44,10 @@
 
 
 .mid{
-  height:30vh;
-  width:60vw;
   color:white;
   font-size:20px;
   display:none;
   justify-content: center;
-  align-items: end;
 
 }
 #mid2{
