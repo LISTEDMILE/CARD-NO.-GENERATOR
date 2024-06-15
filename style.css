@@ -15,16 +15,43 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
-  
-
-
 }
+  #card{
+    background-color: rgb(10, 75, 71);
+    display:flex;
+    width:500px;
+    height:300px;
+    justify-content: center;
+  
+  }
+
+  #result{
+    display:flex;
+    margin:80px;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:100px;
+    padding-right:100px;
+  }
+
 @media (max-width:1000px){
 #all{
-  margin-top:180px;
+  margin-top:280px;
 }
 h1{
   font-size: 60px;
+}
+#card{
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+#result{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  padding:0px;
+
+
 }
 }
 
@@ -113,15 +140,7 @@ h1{
   background-color: white;
 }
 
-#card{
-  background-color: rgb(10, 75, 71);
-  display:flex;
-  width:500px;
-  height:300px;
-  margin:50px;
-  justify-content: center;
 
-}
 
 #an{
   height:50px;
