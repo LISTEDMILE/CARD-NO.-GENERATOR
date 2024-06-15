@@ -1,11 +1,13 @@
 *{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin:0px;
+padding:0px;
+
 }
 
 #name{
 
-  padding-left:20px;
-  padding-right:20px;
+  padding:15px 20px;
   font-size:15px;
   color:rgb(160, 160, 154);
   border-bottom: 2px solid white;
@@ -19,41 +21,27 @@
   #card{
     background-color: rgb(10, 75, 71);
     display:flex;
-    width:500px;
-    height:300px;
+    width:350px;
+    height:200px;
     justify-content: center;
   
   }
 
   #result{
     display:flex;
-    margin:80px;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
-    padding-left:100px;
-    padding-right:100px;
+
   }
 
-@media (max-width:1000px){
-#all{
-  margin-top:280px;
-}
-h1{
-  font-size: 60px;
-}
-#card{
-  margin-top: 200px;
-  margin-bottom: 150px;
-}
-#result{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  padding:0px;
+  #max{
+    height:97vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
 
 
-}
-}
 
 #home{
   height:80%;
@@ -74,28 +62,27 @@ h1{
   color:white;
   font-size:20px;
   display:none;
-  justify-content: center;
+  justify-content: space-around;
+
 
 }
-#mid2{
-  display:flex;
+.mid h1{
+  margin-bottom:40px;
+
 }
-#all{
+#mid1{
   display:flex;
-  align-items:center;
-  justify-content: center;
 }
 #bid{
-  height:7vh;
-  width:25vw;
-  border:4px solid rgb(76, 207, 207);
-  border-radius: 25px;
-  background-color: rgb(136, 248, 248);
-  font-size: 7px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  position:relative;
+  height:fit-content;
+  width:fit-content;
+  background-color: white;
+  color:black;
+  border:3px solid rgb(66, 110, 190);
+  border-radius: 8px;
+  text-align: center;
+  font-size:15px;
+  padding:16px 8px;
 }
 #bidi{
   background-color:rgba(0, 0, 0, 0);
@@ -143,13 +130,165 @@ h1{
 
 
 #an{
-  height:50px;
-  width:200px;
+  height:60px;
+  width:250px;
   background-color: white;
   color:black;
   border:3px solid rgb(66, 110, 190);
   border-radius: 8px;
   text-align: center;
   font-size: 100%;
+
+}
+
+
+.change{
+  background-color: rgb(10, 59, 87);
+  color:white;
+  font-size: 28px;
+  padding:4px;
+  box-shadow: 8px 4px 74px 16px red;
+  border:2px solid rgb(6, 122, 117);
+  border-radius:10px;
+  height:fit-content;
+  width:fit-content;
+}
+
+.change:hover{
+  box-shadow: 8px 4px 74px 8px yellow;
+}
+
+
+@media (max-width:1000px){
+  h1{
+    font-size: 60px;
+    
+  }
+  #result{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  
+  
+  
+  }
+  
+  #bid{
+    font-size: 30px;
+
+  }
+  
+  #an{
+    height:100px;
+    width:500px;
+    font-size: 2em;
+  }
+  
+  
+  #card{
+    height:350px;
+    width:600px;
+    margin-top:60px;
+  }
+
+
+  .mid{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+  #next{
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+    margin-right:240px;
+  }
+
+  #previous{
+    display:flex;
+    width:100%;
+    justify-content: flex-start;
+    margin-left:240px;
+    margin-bottom:80px;
+  
+  }
+  .change{
+    font-size: 50px;
+  }
+
+  }
+
+  .circle{
+    animation:animate 1s linear 2s infinite;
+
+background-color:rgba(37, 216, 216, 0.4);
+    border-radius:50px;
+    z-index:-1;
+    position:fixed;
+
+
+  }
+
+  #circle1{
+    transition: 2s linear 30s;
+transform: translate(153px,154px);
+    margin:45vh 23vw;
+  }
+
+
+
+@keyframes animate{
+  0%{height:2px;
+    width:2px;
+    box-shadow: 0px 0px 0px 0px cyan;
+    }
+    50%{height:6px;
+    width:6px;
+    box-shadow: 7px 7px 44px 7px cyan;}
+    100%{
+      height:8px;
+      width:8px;
+      box-shadow: 12px 12px 76px 12px cyan;
+    }
+}
+
+@keyframes move2{
+  0%{
+    transform: translate(22px,32px);
+  }
+    50%{
+      transform:translate(53px,54px);
+    }
+    100%{
+    transform:translate(25px,4px);
+    }
+
+}
+@keyframes move3{
+  0%{
+    transform: translate(23px,34px);
+  }
+    50%{
+      transform:translate(6px,4px);
+    }
+    100%{
+    transform:translate(7px,3px);
+    }
+
+}
+@keyframes move4{
+  0%{
+    transform: translate(5px,4px);
+  }
+    50%{
+      transform:translate(5px,4px);
+    }
+    100%{
+    transform:translate(23px,4px);
+    }
 
 }
