@@ -8,7 +8,7 @@ padding:0px;
 #name{
 
   padding:15px 20px;
-  font-size:15px;
+  font-size:25px;
   color:rgb(160, 160, 154);
   border-bottom: 2px solid white;
 
@@ -232,7 +232,8 @@ padding:0px;
 @media (max-width:1000px){
   h1{
     font-size: 60px;
-    
+    margin-top: 3px;
+    margin-bottom:3px;
   }
   #result{
     display:flex;
