@@ -85,7 +85,6 @@ padding:0px;
 
 
 #home{
-  height:fit-content;
   font-size: 30px;
   background-color: rgb(3, 41, 41) ;
   box-shadow: 2px 2px 90px 2px red;
@@ -283,6 +282,12 @@ padding:0px;
 
   }
 
+  #home{
+    font-size: 95px;
+    border-width:8px;
+    border-radius: 35px;
+  }
+
   
 
 
@@ -297,9 +302,8 @@ padding:0px;
   #previous{
     display:flex;
     width:100%;
-    justify-content: flex-start;
-    margin-left:240px;
-    margin-bottom:80px;
+    justify-content: flex-end;
+    margin-right:240px;
   
   }
   .change{
