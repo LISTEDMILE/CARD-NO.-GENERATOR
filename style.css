@@ -155,7 +155,6 @@ padding:0px;
   justify-content: flex-start;
 }
 
-#bidmax h5{}
 #bid{
   height:fit-content;
   width:fit-content;
@@ -168,15 +167,85 @@ padding:0px;
   padding:16px 8px;
 }
 
-.bidbuttonelementbutton{
+#bidelement{
   display:flex;
+  border:1px solid black;
+  width:fit-content;
+position:absolute;
+font-weight: 500;
+transform: translateY(70px);
+  box-shadow: 2px 2px 8px 2px rgba(255, 255, 255, 0.37);
+}
+
+
+.bidbuttonelement:hover .bidbuttonelementbutton{
+display:flex;
+}
+.bidbuttonelement:hover{
+  background-color: white;
+}
+
+.bidbuttonelementbutton:hover{
+  background-color: white;
+}
+
+.bidbuttonelementbutton:hover .cardcate{
+  display:flex;
+}
+.cardcate:hover{
+  background-color: white;
+}
+
+.cardcate:hover .bank{
+  display:flex;
+}
+.bank:hover{
+  background-color: white;
+}
+
+
+
+.bidbuttonelement p{
+  font-size: 20px;
+  font-weight: 500;
+  padding:15px 30px 15px 30px;
+  color:black;
+  text-align: center;
+}
+.bidbuttonelement{
+  background-color: cyan;
+}
+
+
+.bidbuttonelementbutton{
+  
   flex-direction: column;
   width:fit-content;
   position:absolute;
+  transform: translate(50px,-30px);
+  display:none;
+  background-color: cyan;
   
-  
+ 
 
 
+}
+
+
+.cardcate{
+  display:none;
+  width:fit-content;
+  position:absolute;
+  transform:translate(50px,30px);
+  background-color: cyan;
+}
+
+.bank{
+  display:none;
+  width:fit-content;
+  position:absolute;
+  transform:translate(50px,30px);
+  background-color: cyan;
 }
 
 
@@ -200,15 +269,15 @@ padding:0px;
   color:white;
   font-size: 28px;
   padding:4px;
-  box-shadow: 8px 4px 74px 16px red;
-  border:2px solid rgb(6, 122, 117);
+
+  border:3px solid rgb(6, 122, 117);
   border-radius:10px;
   height:fit-content;
   width:fit-content;
 }
 
 .change:hover{
-  box-shadow: 8px 4px 74px 8px yellow;
+  box-shadow: 4px 2px 30px 4px rgb(22, 105, 94);
 }
 
 
