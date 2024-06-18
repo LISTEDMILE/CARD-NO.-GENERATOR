@@ -22,128 +22,208 @@
         </a>
       </div>
     </div>
-        
+
       </div>
 
 
-  
+
       <div class="mid" id="mid1">
         <div>
           <div>
             <h1>
-              Bank Identification Number:
+              Choose Card network/scheme:
             </h1>
 
           </div>
-          <div id="bidmax">
-              <div id="bid">
-      <h4>
-        Choose card type....
+          <div class="bidmax">
+              <div class="bid">
+      <h4 id="cartypeh">
+        Card network..
       </h4>
     </div>
-    <div id="bidelement">
-    <div id="bidbutton">
-      <div class="bidbuttonelement">
-<p>
-  debit
-</p>
-    <div class="bidbuttonelementbutton">
-               
-              <p>
-                    rupay
-
-                  </p>
-                    <div class="cardcate">
+    <div>
+    <div class="bidelement" onclick="cartypeh()">
+    
+      
+      <button onclick="cartype='Visa';" >
+        Visa
+      </button>
+      
+      <button onclick="cartype='Rupay';">
+        Rupay
+      </button>
 
 
-                      <p>
-                        second
-                      </p>
-                        <div class="bank">
-                          <p>
-  ICICI
-  </p>
-  <p>
-    ICICI
-    </p>
-    <p>
-  ICICI
-  </p>
-                  
-</div>
-<p>
-  second
-</p>
-  <div class="bank">
-    <p>
-ICICI
-</p>
-<p>
-ICICI
-</p>
-<p>
-ICICI
-</p>
+      <button onclick="cartype='Master Card';">
+        Master Card
+      </button>
 
-  </div>
-  <p>
-    second
-  </p>
-    <div class="bank">
-      <p>
-ICICI
-</p>
-<p>
-ICICI
-</p>
-<p>
-ICICI
-</p>
 
+
+      <button onclick="cartype='master card';">
+        Master Card
+      </button>
+
+
+
+      <button onclick="cartype='master card';">
+        Master Card
+      </button>
+
+
+
+      <button onclick="cartype='master card';">
+        Master Card
+      </button>
+                      
+
+                    
+
+             
+ 
+            </div></div></div>
     </div>
-                      <p>
-                      second
-                    </p>
-                      <div class="bank">
-                        <p>
-ICICI
-</p>
-<p>
-  ICICI
-  </p>
-  <p>
-ICICI
-</p>
-                
-                      </div>
-                   
-                    </div>
-                  
-              </div>
-            </div>
-  </div>
-            </div></div>
-    </div>
-   <div id="next">
+   <div class="next">
     <button class="change" onclick="next()">
         NEXT
     </button>
    </div>
-        
+
         </div>
-    <div class="mid" id="mid2">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="mid" id="mid2">
+        <div>
+          <div>
+            <h1>
+              Choose Card category:
+            </h1>
+
+          </div>
+          <div class="bidmax">
+              <div class="bid">
+      <h4 id="carcath">
+        Card category....
+      </h4>
+    </div>
+  <div>
+    <div class="bidelement" onclick="carcath()">
+    
+      
+      <button onclick="carcat='Credit';">
+        Credit
+      </button>
+      
+      <button onclick="carcat='Debit';">
+        Debit
+      </button>
+                      
+
+                    
+
+             
+ 
+            </div></div>
+    </div>
+  </div>
      
+  <div class="next">
+    <button class="change" onclick="previous()">
+    BACK
+    </button>
+
+    <button class="change" onclick="next()">
+        NEXT
+    </button>
+   </div>
+
+        </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="mid" id="mid3">
+        <div>
+          <div>
+            <h1>
+              Choose your bank:
+            </h1>
+
+          </div>
+          <div class="bidmax">
+              <div class="bid">
+      <h4 id="carbankh">
+        Bank....
+      </h4>
+    </div>
+  <div>
+    <div class="bidelement" onclick="carbankh()">
+    
+      
+      <button onclick="carbank='Cenara Bank';">
+        Cenara Bank
+      </button>
+      
+      <button onclick="carbank='OBC Bank';">
+        OBC Bank
+      </button>
+                      
+
+                    
+
+             
+ 
+            </div></div></div>
+    </div>
+  
+     
+  <div class="next">
+    <button class="change" onclick="previous()">
+    BACK
+    </button>
+
+    <button class="change" onclick="next()">
+        NEXT
+    </button>
+   </div>
+
+        </div>
+      
+      
+      
+      
+      
+      
+      
+      
+    <div class="mid" id="mid4">
+
       <div><div>
       <h1>
       Enter your account no.....
     </h1>
   </div>
     <input type="number" id="an" placeholder="Account no.">
- 
-  
+
+
   </div>
 
-  <div id="previous">
+  <div class="next">
     <button class="change" onclick="previous()">
     BACK
     </button>
@@ -159,14 +239,20 @@ ICICI
       </div>
     <div id="card">
       <div id="insidebank">
-        <h4 >
-BANK
+        <h4 id="cartypecardh" style="  color:rgb(185, 196, 37);">
+
+        </h4>
+        <h4 id="insidebankh">
+
         </h4>
       </div>
       <div id="chip">
 <div id="chip1">
 <div></div><div></div><div></div><div></div><div></div><div></div>
+
+
 </div>
+<h3 id="carcatcardh"></h3>
       </div>
       <div id="insideno">
         <p>
@@ -179,7 +265,7 @@ BANK
 
   </div>
 
-  <button style="margin-bottom:30px;" onclick="next()">
+  <button style="margin-bottom:30px;" onclick="r()">
     RESULT
   </button>
 
