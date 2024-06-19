@@ -8,8 +8,8 @@ function next(){
     if(l==1){
       
        document.getElementById('mid1').style.display="flex";
-       document.getElementById('mid4').style.display="none";
-       document.getElementsByClassName('midmid')[3].style.display="block";
+       document.getElementById('mid5').style.display="none";
+     
        document.getElementById('finaldiv').style="border:none; padding:0px 0px";
 
     }
@@ -30,7 +30,9 @@ function next(){
   
 }
 else {
-    document.getElementsByClassName('midmid')[3].style.display="none";
+    document.getElementById('mid4').style.display="none";
+  document.getElementById('mid5').style.display="flex";
+  
     document.getElementById('finaldiv').style="border-right:2px solid rgba(45, 215, 238, 0.74); border-bottom:2px solid rgba(45, 215, 238, 0.74); padding:8px 20px";
 }
 }
@@ -50,8 +52,9 @@ function previous(){
     document.getElementById('mid3').style.display="flex";
     }
     else{
-        document.getElementsByClassName('midmid')[3].style.display="block";
-
+        document.getElementById('mid5').style.display="none";
+  document.getElementById('mid4').style.display="flex";
+  
     }
 }
 var cartype;
