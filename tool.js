@@ -154,8 +154,39 @@ function carbankh(){
 //logic.......
 
 function logic(){
-    var parentobj=new Map{
-        ['visa':['credit':['OBC Bank':45]]]
+    var a='Visa';
+    var d='Credit';
+    var c='OBCBank';
+    var parentobj={
+        'Visa':{'Credit':{
+                      'OBCBank':45,
+                      'CenaraBank':43
+                     },
+              'Debit':{
+                'OBCBank':45,
+                'CenaraBank':43
+               }
+             },
+        'Rupay':{'Credit':{
+                       'OBCBank':45,
+                       'CenaraBank':43
+                      },
+               'Debit':{
+                       'OBCBank':45,
+                       'CenaraBank':43
+                     }
+              },
+        'MasterCard':{'Credit':{
+            'OBCBank':45,
+            'CenaraBank':43
+           },
+    'Debit':{
+      'OBCBank':45,
+      'CenaraBank':43
+     }
+   },
+     
+
     };
-    console.log(parentobj.'visa'.'credit'.'OBC Bank'.value);
+    console.log(parentobj.a.d.c);
 }
